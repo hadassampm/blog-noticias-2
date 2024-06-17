@@ -1,0 +1,154 @@
+body {
+  background-color: rgb(255, 255, 255);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header-estilo a {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: larger;
+}
+
+.header-estilo {
+  height: 100px;
+}
+
+.header-estilo a:hover {
+  color: white;
+}
+
+.card-estilo {
+  background-color: #4a2f1b;
+  border-style: none;
+  margin-bottom: 60px;
+}
+
+.card-estilo h2 {
+  text-align: center;
+  font-weight: 500;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: xx-large;
+  color: rgb(254, 254, 254);
+}
+
+.card-estilo p {
+  color: white;
+  text-align: center;
+  border: 3px;
+}
+
+.card-estilo a {
+    background-color: #4a2f1b;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .card-estilo a:hover {
+    color: white;
+    box-shadow: 0 0 5px white;
+  }
+
+.footer-estilo {
+  background-color: #4a2f1b;
+  color: rgb(247, 247, 247);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Mukta:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.header{
+    background-color: #4a2f1b;
+}
+.container-fluid{
+    background-color: #4a2f1b;
+    height: 80px;
+}
+.navbar-brand.text-white{
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+ /* Estilo para o botão */
+ .form-control.me-2{
+    font-family: "Playfair Display", serif;
+    color: white; /* Cor do texto */
+    border-color: white; /* Cor da borda */
+}
+
+/* Estilo para o botão quando clicado */
+.btn.btn-outline-secondary{
+    font-family: "Playfair Display", serif;
+    border-color: white; /* Borda transparente */
+    background-color: transparent !important; /* Fundo transparente */
+    color: white;
+}
+
+.btn.btn-primary{
+    font-family: "Playfair Display", serif;
+    border-color: #4a2f1b; /* Borda transparente */
+    background-color: #4a2f1b; 
+    color: white;
+}
+.btn.btn-primary:hover {
+    background-color: #4a2f1b !important; /* Mantém a mesma cor de fundo */
+    border-color: #4a2f1b !important; /* Mantém a mesma cor da borda */
+    color: white !important; /* Mantém a mesma cor do texto */
+}
+.card{
+    margin:20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+    text-align: center;
+}
+.card-container{
+    text-align: center;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 230px;
+    margin-bottom: 50px;
+}
+.card-title{
+    font-family: "Mukta", sans-serif;
+}
+.card-text{
+    text-align: justify;
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #4a2f1b; /* Cor de fundo marrom */
+    color: #fff; /* Cor do texto branco */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Estilos para o footer */
+footer {
+    background-color: #4a2f1b; /* Cor de fundo marrom */
+    color: #fff; /* Cor do texto branco */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+.container {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centered-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card.mb-3{
+    max-width: 700px; /* Defina o tamanho máximo do card */
+    width: 100%;
+}

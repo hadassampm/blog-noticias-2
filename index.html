@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="blog">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Noticias</title>
+
+    <!-- Link para importar o Bootstrap via CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header-marrom">
+      <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+              <a class="navbar-brand text-white">Receitas de Bolos</a>
+              <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                  <button class="btn btn-outline-secondary" type="submit">Pesquisar</button>
+              </form>
+          </div>
+      </nav>
+  </header>    
+    <main role="main">
+      <div class="album py-5">
+        <div class="container">
+          <div class="row" ng-controller="Rest">
+            <div class="col-lg-4 col-md-6 col-sm-12" ng-repeat="publicacao in publicacoes">
+              <div class="card mb-4 shadow-sm card-estilo">
+                <img
+                  ng-src="{{ publicacao.thumbImage }}"
+                  alt="Imagem da Postagem"
+                />
+                <div class="card-body">
+                  <h2>{{ publicacao.title }}</h2>
+                  <div class="container">
+                    <div class="row">
+                      <p class="col-sm-12">{{ publicacao.description }}</p>
+                      <a ng-href="pagina.html?id={{$index}}" class="btn col-sm-12">LER MAIS</a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+          <p>© 2024 ReceitasdeBolos.com. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
